@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This file is part of Npackd.
+
+    Npackd is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Npackd is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Npackd.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<root>
+    <spec-version>2</spec-version>
+    
+    <!--
+        Licenses in alphabetical order (including the reversed domain name prefix).
+    -->
+    <license name="org.gnu.GPLv2">
+        <title>GPLv2</title>
+        <url>http://www.gnu.org/licenses/gpl.html</url>
+    </license>
+    <license name="org.gnu.GPLv3">
+        <title>GPLv3</title>
+        <url>http://www.gnu.org/licenses/gpl.html</url>
+    </license>
+    <license name="org.gnu.LGPLv2_1">
+        <title>LGPLv2.1</title>
+        <url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</url>
+    </license>
+    
+    <!--
+        Packages in alphabetical order (including the reversed domain name prefix).
+    -->
+    <package name="org.getrailo.RailoInstaller">
+        <title>Railo CFML Server w/ Tomcat Installer</title>
+        <url>http://getrailo.org/</url>
+        <description>Railo is an Open Source CFML Engine / Server</description>
+        <license>org.gnu.GPLv2</license>
+    </package>
+    
+    <!--
+        The package versions are not sorted by the package, but different
+        version
+        of a package should stay together. Newer versions should appear under
+        older ones.
+    -->
+    
+    <version name="3.3.4.003" package="org.getrailo.RailoInstaller" type="one-file">
+        <file path=".Npackd\Install.bat">for /f "delims=" %%x in ('dir /b *.exe') do set setup=%%x
+ren "%setup%" railo-3.3.4.003-pl0-windows-installer.exe
+</file>
+        <url>http://www.getrailo.org/down.cfm?item=/railo/remote/download/3.3.4.003/tomcat/windows/railo-3.3.4.003-pl0-windows-installer.exe</url>
+        <important-file path="railo-3.3.4.003-pl0-windows-installer.exe" title="Installer"/>
+        <sha1>90190bf0a367df414ba72585212095ebc085707e</sha1>
+    </version>
+    
+</root>
