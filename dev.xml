@@ -37,11 +37,11 @@
     <!--
         Packages in alphabetical order (including the reversed domain name prefix).
     -->
-    <package name="com.nokia.QtMinGWInstaller">
-        <title>Qt for MinGW installer</title>
-        <url>http://qt.nokia.com/products/library</url>
-        <description>C++ library (development)</description>
-        <license>org.gnu.GPLv3</license>
+    <package name="org.getrailo.RailoInstaller">
+        <title>Railo CFML Server w/ Tomcat Installer</title>
+        <url>http://getrailo.org/</url>
+        <description>Railo is an Open Source CFML Engine / Server</description>
+        <license>org.gnu.GPLv2</license>
     </package>
     
     <!--
@@ -51,13 +51,13 @@
         older ones.
     -->
     
-    <version name="4.8.1" package="com.nokia.QtMinGWInstaller" type="one-file">
+    <version name="3.3.4.003" package="org.getrailo.RailoInstaller" type="one-file">
         <file path=".Npackd\Install.bat">for /f "delims=" %%x in ('dir /b *.exe') do set setup=%%x
-ren "%setup%" qt-win-opensource-mingw.exe
+ren "%setup%" railo-3.3.4.003-pl0-windows-installer.exe
 </file>
-        <url>http://get.qt.nokia.com/qt/source/qt-win-opensource-4.8.1-mingw.exe</url>
-        <important-file path="qt-win-opensource-mingw.exe" title="Installer"/>
-        <sha1>c5392a5fb07b1b8c0328f8dcb5f2ccd4d2f01fca</sha1>
+        <url>http://www.getrailo.org/down.cfm?item=/railo/remote/download/3.3.4.003/tomcat/windows/railo-3.3.4.003-pl0-windows-installer.exe</url>
+        <important-file path="railo-3.3.4.003-pl0-windows-installer.exe" title="Installer"/>
+        <sha1>90190bf0a367df414ba72585212095ebc085707e</sha1>
     </version>
     
 </root>
